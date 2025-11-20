@@ -268,4 +268,69 @@ main { flex: 1; }
   background-color: #295081;
 }
 
+/* ESTILO DA PAGINA DE EVENTOS */
+
+.lista-eventos {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.lista-eventos h1 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #1f395b;
+}
+
+/* GRID RESPONSIVO */
+.grid-eventos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* CARDS DOS EVENTOS */
+.card-evento {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card-evento h3 {
+  margin: 0 0 8px;
+  color: #1f395b;
+  font-size: 18px;
+}
+
+.card-evento p {
+  margin: 4px 0;
+  color: #334;
+  font-size: 14px;
+}
+
+.card-evento .btn-secundario {
+  display: inline-block;
+  margin-top: 12px;
+  background: #1f395b;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* GRID PARA TELAS MAIORES */
+@media (min-width: 600px) {
+  .grid-eventos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-eventos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
   
